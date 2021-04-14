@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>VideoGPT: Generative Pre-Training on Videos using Transformers</title>
+
+  <meta name="author" content="Wilson Yan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container"></div>
+    <h2>
+      VideoGPT: Generative Pre-Training
+      <br>
+      on Videos using Transformers
+    </h2>
+    <hr>
+    <p class="authors">
+      <a href="https://wilson1yan.github.io/">Wilson Yan*</a>, 
+      <a href="https://zzyunzhi.github.io/">Yunzhi Zhang*</a>, 
+      <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, 
+      <a href="https://people.eecs.berkeley.edu/~aravind/">Aravind Srinivas</a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+      <a class="btn btn-primary" href="" role="button">Paper</a>
+      <a class="btn btn-primary" href="https://github.com/wilson1yan/VideoGPT" role="button">Code</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <h2> Abstract </h2>
+      <hr>
+      <p>
+        We present VideoGPT: a conceptually simple architecture for scaling likelihood-based 
+        generative modeling to natural videos. VideoGPT uses VQ-VAE that learns downsampled 
+        discrete latent representations of a raw video by employing 3D convolutions and axial 
+        self-attention. A simple GPT-like architecture is then used to autoregressively model the 
+        discrete latents using spatio-temporal position encodings. Despite the simplicity in 
+        formulation and ease of training, our architecture is able to generate samples competitive with 
+        state-of-the-art GAN models for video generation on the BAIR Robot dataset, and generate 
+        high fidelity natural images from UCF-101 and Tumbler GIF Dataset (TGIF). We hope our proposed 
+        architecture serves as a reproducible reference for a minimalistic implementation of 
+        transformer based video generation models
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>VideoGPT Samples</h2>
+      <hr>
+      We train VideoGPT on several datasets. Non-cherry picked samples are shown below.
+    </div>
+    <div class="section">
+      <h3>BAIR (Single-Frame Conditional)</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="75%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/bair_1frame_cond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>UCF-101 Unconditional</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="75%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/ucf_128_uncond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>UCF-101 Class-Conditional</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="75%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/ucf_class_cond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Tumblr GIFs Unconditional</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="75%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/tgif_uncond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>ViZDoom (HGS) Unconditional (left), Action-Conditional (right)</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/hgs.mp4" type="video/mp4">
+          </video>
+          <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/hgs_action_cond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>ViZDoom (Battle2) Unconditional (left), Action-Conditional (right)</h3>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+          <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/battle2.mp4" type="video/mp4">
+          </video>
+          <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="videos/battle2_action_cond.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
