@@ -64,7 +64,7 @@
     <div class="section">
       <h2>DMLab</h2>
       <hr>
-      <p><b>Left</b>: Videos of 300 frames conditioned on 144</p>
+      <p><b>Left</b>: Videos prediction samples of 300 frames conditioned on 144 (action-conditional)</p>
       <p><b>Right</b>: 3D visualizations of 300 frame videos conditioned on 36 frames. <b>Video predictions use only RGB frames</b></p>
       <div style="width: 100%; overflow: hidden;">
         <div style="width: 49%; float: left;">
@@ -111,7 +111,7 @@
     <div class="section">
       <h2>Minecraft</h2>
       <hr>
-      <p><b>Below</b>: Videos of 300 frames conditioned on 144</p>
+      <p><b>Below</b>: Video prediction samples of 300 frames conditioned on 144 (action-conditional)</p>
       <center>
       <div style="width: 75%">
             <video width="100%" onended="this.currentTime = 0;" controls="" muted="">				
@@ -121,7 +121,7 @@
       </center>
 
       <br>
-      <p><b>Below</b>: Video prediction samples for each method with 300 frames conditioned on 36</p>
+      <p><b>Below</b>: Video prediction samples for each method with 300 frames conditioned on 36 (action-conditional)</p>
       <section id="minecraft" class="bg-light">
       <nav class="nav justify-content-center nav-tabs" id="minecraft-current-view-ul">
           <a class="nav-link active" id="tab0" href="javascript: void(0);" onclick="ChangeCurrentView(1, 0);"><h5>TECO (ours)</h5></a>
@@ -139,6 +139,85 @@
       </div>
       </center>
       </section>
+
+    <br>
+
+    <div class="section">
+      <h2>Habitat</h2>
+      <hr>
+      <p><b>Below</b>: Video prediction samples of 300 frames conditioned on 144 (action-conditional)</p>
+      <center>
+      <div style="width: 75%">
+            <video width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+          <source src="./videos/comparison/habitat.mp4" type="video/mp4"> 
+          </video>
+      </div>
+      </center>
+
+      <br>
+      <p><b>Below</b>: Video prediction samples for each method with 300 frames conditioned on 36</p>
+      <section id="habitat" class="bg-light">
+      <nav class="nav justify-content-center nav-tabs" id="habitat-current-view-ul">
+          <a class="nav-link active" id="tab0" href="javascript: void(0);" onclick="ChangeCurrentView(2, 0);"><h5>TECO (ours)</h5></a>
+          <a class="nav-link" id="tab1" href="javascript: void(0);" onclick="ChangeCurrentView(2, 1);"><h5>Latent FDM</h5></a>
+          <a class="nav-link" id="tab2" href="javascript: void(0);" onclick="ChangeCurrentView(2, 2);"><h5>Perceiver AR</h5></a>
+      </ul>
+
+      <center>
+      <div id="habitat_output_canvas" style="width: 75%;">
+          <video id="habitat_output_video" width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+            <source src="./videos/habitat/teco.mp4" type="video/mp4"> 
+          </video>
+      </div>
+      </center>
+      </section>
+
+    <br>
+
+    <div class="section">
+      <h2>Kinetics-600</h2>
+      <hr>
+      <p><b>Below</b>: Video prediction samples of 100 frames conditioned on 20 with top-k sampling (left) and no top-k (right)</p>
+      <div style="width: 100%; overflow: hidden;">
+        <div style="width: 49%; float: left;">
+                <video width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+              <source src="./videos/comparison/kinetics_topk.mp4" type="video/mp4"> 
+              </video>
+        </div>
+        <div style="width: 2%;"> </div>
+        <div style="width: 49%; float: right;">
+            <video width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+            <source src="./videos/comparison/kinetics_no_topk.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+
+      <br>
+      <p><b>Below</b>: Video prediction samples for each method with 100 frames conditioned on 20 with top-k sampling (left) and no top-k (right)</p>
+      <section id="kinetics" class="bg-light">
+      <nav class="nav justify-content-center nav-tabs" id="kinetics-current-view-ul">
+          <a class="nav-link active" id="tab0" href="javascript: void(0);" onclick="ChangeCurrentView(3, 0);"><h5>TECO (ours)</h5></a>
+          <a class="nav-link" id="tab1" href="javascript: void(0);" onclick="ChangeCurrentView(3, 1);"><h5>Latent FDM</h5></a>
+          <a class="nav-link" id="tab2" href="javascript: void(0);" onclick="ChangeCurrentView(3, 2);"><h5>Perceiver AR</h5></a>
+      </nav>
+
+      <div id="kinetics_output_canvas" style="width: 100%; overflow: hidden;">
+        <div style="width: 49%; float: left;">
+          <video id="kinetics_output_video" width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+            <source src="./videos/kinetics/teco.mp4" type="video/mp4"> 
+          </video>
+        </div>
+        <div style="width: 2%;"> </div>
+        <div style="width: 49%; float: right">
+          <video id="kinetics_output_video_notopk" width="100%" onended="this.currentTime = 0;" controls="" muted="">				
+            <source src="./videos/kinetics/teco_notopk.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </section>
+
+      <br>
+
 
     <script type="text/javascript">
       var currentViewList = ["teco", "latent_fdm", "perceiver_ar", "cwvae", "fitvid"];
@@ -160,6 +239,10 @@
           var videoC = document.getElementById(dataset + "_output_video_3d");
           videoC.src = "./videos/" + dataset + "/" + method + "_3d.mp4";
           // videoC.play();
+        }
+        if (dataset == "kinetics") {
+          var videoC = document.getElementById(dataset + "_output_video_notopk")
+          videoC.src = "./videos/" + dataset + "/" + method + "_notopk.mp4"
         }
       }
 
