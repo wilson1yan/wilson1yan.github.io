@@ -65,7 +65,7 @@
       <h2>DMLab</h2>
       <hr>
       <p><b>Left</b>: Videos prediction samples of 300 frames conditioned on 144 (action-conditional)</p>
-      <p><b>Right</b>: 3D visualizations of 300 frame videos conditioned on 36 frames. <b>Video predictions use only RGB frames</b></p>
+      <p><b>Right</b>: 3D visualizations of 300 frame videos conditioned on 36 frames. <b>Video predictions use only RGB frames</b>. We compute 3D scenes from RGB frames by applying pre-trained depth and pose estimators, and project points into a 3D pointcloud</p>
       <div style="width: 100%; overflow: hidden;">
         <div style="width: 49%; float: left;">
                 <video width="100%" onended="this.currentTime = 0;" controls="" muted="">				
