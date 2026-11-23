@@ -133,7 +133,7 @@ img {
   filter: brightness(1.1);
 }
 
-.links .icon-mail    { --brand: #ea4335; }
+.links .icon-mail    { --brand: #34a853; }
 .links .icon-github  { --brand: #24292f; }
 .links .icon-scholar { --brand: #4285f4; }
 .links .icon-x       { --brand: #000000; }
