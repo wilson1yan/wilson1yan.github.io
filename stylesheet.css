@@ -112,22 +112,37 @@ img {
 }
 
 .links a {
+  --brand: #5b636e;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--border);
+  border: 1px solid transparent;
   border-radius: 50%;
-  color: var(--muted);
-  transition: color .15s ease, border-color .15s ease, transform .15s ease;
+  background: var(--brand);
+  color: #fff;
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 
 .links a:hover,
 .links a:focus {
-  color: var(--link);
-  border-color: var(--link);
-  transform: translateY(-1px);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+  filter: brightness(1.1);
+}
+
+.links .icon-mail    { --brand: #e8841a; }
+.links .icon-github  { --brand: #24292f; }
+.links .icon-scholar { --brand: #4285f4; }
+.links .icon-x       { --brand: #000000; }
+
+@media (prefers-color-scheme: dark) {
+  .links .icon-github,
+  .links .icon-x {
+    border-color: #4a5058;
+  }
 }
 
 .links svg {
