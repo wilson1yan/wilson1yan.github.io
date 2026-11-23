@@ -1,425 +1,268 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Wilson Yan</title>
-
-  <meta name="author" content="Wilson Yan">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wilson Yan</title>
+  <meta name="author" content="Wilson Yan">
+  <meta name="description" content="Wilson Yan — research on world models, video generation, and control.">
+  <meta name="color-scheme" content="light dark">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Wilson Yan</name>
-              </p>
-              <p>
-                Hi everyone! I was previously a senior research scientist at Google DeepMind. I also completed my PhD at UC Berkeley, where I was fortunate to be advised by <a href="https://people.eecs.berkeley.edu/~pabbeel/">Professor Pieter Abbeel</a>.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:wilson1.yan@berkeley.edu">Email</a> &nbsp/&nbsp
-                <a href="https://github.com/wilson1yan">Github</a> &nbsp/&nbsp
-                <!-- <a href="data/WilsonYanResume.pdf">CV</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.com/citations?user=tR2Qw0YAAAAJ&hl=en">Google Scholar</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:30%;max-width:30%">
-              <a href="images/WilsonYan4.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/WilsonYan4.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My current research is focused on world models for control.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+  <main class="page">
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='dreamer4.png'><img src='images/dreamer4.png'></div>
-                <img src='images/dreamer4.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2509.24527">
-                <papertitle>Training Agents Inside of Scalable World Models</papertitle>
-              </a>
-              <br>
+    <header class="intro">
+      <div class="intro-text">
+        <h1>Wilson Yan</h1>
+        <p>
+          Hi everyone! I was previously a senior research scientist at Google DeepMind. I also completed my PhD at UC Berkeley, where I was fortunate to be advised by <a href="https://people.eecs.berkeley.edu/~pabbeel/">Professor Pieter Abbeel</a>.
+        </p>
+        <ul class="links">
+          <li><a href="mailto:wilson1.yan@berkeley.edu">Email</a></li>
+          <li><a href="https://github.com/wilson1yan">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=tR2Qw0YAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://x.com/wilson1yan">X / Twitter</a></li>
+        </ul>
+      </div>
+      <div class="photo">
+        <a href="images/WilsonYan4.jpg"><img src="images/WilsonYan4_600.jpg" alt="Photo of Wilson Yan" width="200" height="200"></a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Research</h2>
+      <p class="section-intro">My current research is focused on world models for control.</p>
+
+      <ul class="papers">
+
+        <li class="paper">
+          <div class="thumb"><img src="images/dreamer4.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2509.24527">Training Agents Inside of Scalable World Models</a>
+            <p class="authors">
               <a href="https://danijar.com/">Danijar Hafner*</a>,
-              <a href="https://wilson1yan.github.io">Wilson Yan*</a>,
+              <span class="me">Wilson Yan*</span>,
               <a href="https://contrastiveconvergence.net/">Timothy Lillicrap</a>
-              <br>
-              <a href="https://danijar.com/project/dreamer4/">project page</a>
-              <br>
-              <a href="https://x.com/danijarh/status/1973072288351396320">tweet</a>
-              <br>
-              <p></p>
-              <p>Achieving diamonds in Minecraft using a purely offline world model-based approach</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="paper-links">
+              <a href="https://danijar.com/project/dreamer4/">project page</a><a href="https://x.com/danijarh/status/1973072288351396320">tweet</a>
+            </p>
+            <p class="summary">Achieving diamonds in Minecraft using a purely offline world model-based approach.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='elastictok.png'><img src='images/elastictok.png'></div>
-                <img src='images/elastictok.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2410.08368">
-                <papertitle>ElasticTok: Adaptive Tokenization for Image and Video</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/elastictok.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2410.08368">ElasticTok: Adaptive Tokenization for Image and Video</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="https://x.com/VladMnih">Volodymyr Mnih</a>,
               <a href="https://www.afaust.info/">Alexandra Faust</a>,
               <a href="https://people.eecs.berkeley.edu/~matei/">Matei Zaharia</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
               <a href="https://www.haoliu.site/">Hao Liu</a>
-              <br>
-              <em>ICLR 2025</em>
-              <br>
-              <a href="https://largeworldmodel.github.io/elastictok">project page</a>
-              <br>
-              <a href="https://x.com/wilson1yan/status/1845857113723326652">tweet</a>
-              <br>
-              <p></p>
-              <p>Learns variable-length tokenization for image and long video</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="venue">ICLR 2025</p>
+            <p class="paper-links">
+              <a href="https://largeworldmodel.github.io/elastictok">project page</a><a href="https://x.com/wilson1yan/status/1845857113723326652">tweet</a>
+            </p>
+            <p class="summary">Learns variable-length tokenization for image and long video.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='lwm.png'><img src='images/lwm.png'></div>
-                <img src='images/lwm.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2402.08268">
-                <papertitle>World Model on Million-Length Video and Language With Blockwise RingAttention</papertitle>
-              </a>
-              <br>
+        <li class="paper">
+          <div class="thumb"><img src="images/lwm.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2402.08268">World Model on Million-Length Video and Language With Blockwise RingAttention</a>
+            <p class="authors">
               <a href="https://www.haoliu.site/">Hao Liu*</a>,
-              <a href="https://wilson1yan.github.io">Wilson Yan*</a>,
+              <span class="me">Wilson Yan*</span>,
               <a href="https://people.eecs.berkeley.edu/~matei/">Matei Zaharia</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
-              <br>
-              <em>ICLR 2025</em>
-              <br>
-              <a href="https://largeworldmodel.github.io/lwm">project page</a>
-              <br>
-              <a href="https://twitter.com/haoliuhl/status/1757828392362389999">tweet</a>
-              <br>
-              <p></p>
-              <p>A vision-language model trained on million-length sequences of images, language, and video.</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="venue">ICLR 2025</p>
+            <p class="paper-links">
+              <a href="https://largeworldmodel.github.io/lwm">project page</a><a href="https://twitter.com/haoliuhl/status/1757828392362389999">tweet</a>
+            </p>
+            <p class="summary">A vision-language model trained on million-length sequences of images, language, and video.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='MoCA.png'><img src='images/MoCA.png'></div>
-                <img src='images/MoCA.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2311.18827">
-                <papertitle>Motion-Conditioned Image Animation for Video Editing</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/MoCA.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2311.18827">Motion-Conditioned Image Animation for Video Editing</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="https://www.robots.ox.ac.uk/~abrown/">Andrew Brown</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
               <a href="https://rohitgirdhar.github.io/">Rohit Girdhar</a>,
-              <a href="https://scholar.google.com/citations?user=X0EXfT8AAAAJ&hl=en">Samaneh Azadi</a>
-              <br>
-              <a href="https://facebookresearch.github.io/MoCA/">project page</a>
-              <br>
-              <a href="https://twitter.com/wilson1yan/status/1730661144803897789">tweet</a>
-              <br>
-              <p></p>
-              <p>A motion-conditioned image animation approach to video editing that enabled a diverse range of edit types</p>
-            </td>
-          </tr>
-        </tbody></table>
+              <a href="https://scholar.google.com/citations?user=X0EXfT8AAAAJ&amp;hl=en">Samaneh Azadi</a>
+            </p>
+            <p class="paper-links">
+              <a href="https://facebookresearch.github.io/MoCA/">project page</a><a href="https://twitter.com/wilson1yan/status/1730661144803897789">tweet</a>
+            </p>
+            <p class="summary">A motion-conditioned image animation approach to video editing that enables a diverse range of edit types.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='VIPER.png'><img src='images/VIPER.png'></div>
-                <img src='images/VIPER.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2305.14343">
-                <papertitle>Video Prediction Models as Rewards for Reinforcement Learning</papertitle>
-              </a>
-              <br>
+        <li class="paper">
+          <div class="thumb"><img src="images/VIPER.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2305.14343">Video Prediction Models as Rewards for Reinforcement Learning</a>
+            <p class="authors">
               <a href="https://www.escontrela.me/">Alejandro Escontrela*</a>,
               <a href="https://ademiadeniji.github.io/">Ademi Adeniji*</a>,
-              <a href="https://wilson1yan.github.io">Wilson Yan*</a>,
+              <span class="me">Wilson Yan*</span>,
               <a href="https://www.ajayjain.net/">Ajay Jain</a>,
               <a href="https://xbpeng.github.io/">Xue Bin Peng</a>,
               <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>,
               <a href="https://youngwoon.github.io/">Youngwoon Lee</a>,
               <a href="https://danijar.com/">Danijar Hafner</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
-              <br>
-              <em>NeurIPS 2023</em>
-              <br>
-              <a href="https://www.escontrela.me/viper/">project page</a>
-              <br>
-              <a href="https://twitter.com/AleEscontrela/status/1661363555495710721">tweet</a>
-              <br>
-              <p></p>
-              <p>We show that video prediction likelihoods can provide more dense reward signal for learning reinforcement learning agents</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="venue">NeurIPS 2023</p>
+            <p class="paper-links">
+              <a href="https://www.escontrela.me/viper/">project page</a><a href="https://twitter.com/AleEscontrela/status/1661363555495710721">tweet</a>
+            </p>
+            <p class="summary">We show that video prediction likelihoods can provide a dense reward signal for training reinforcement learning agents.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='LQAE.png'><img src='images/LQAE.png'></div>
-                <img src='images/LQAE.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2302.00902">
-                <papertitle>Language Quantized AutoEncoders: Towards Unsupervised Text-Imge Alignment</papertitle>
-              </a>
-              <br>
+        <li class="paper">
+          <div class="thumb"><img src="images/LQAE.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2302.00902">Language Quantized AutoEncoders: Towards Unsupervised Text-Image Alignment</a>
+            <p class="authors">
               <a href="https://haoliu.site/">Hao Liu</a>,
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+              <span class="me">Wilson Yan</span>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
-              <br>
-              <em>NeurIPS 2023</em>
-              <br>
+            </p>
+            <p class="venue">NeurIPS 2023</p>
+            <p class="paper-links">
               <a href="https://twitter.com/haoliuhl/status/1625273748629901312">tweet</a>
-              <br>
-              <p></p>
-              <p>We learn an aligned text-image token representation without text-image data, that can then be used for downstream VQA and classification tasks using in-context learning with an LLM</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="summary">We learn an aligned text-image token representation without text-image data, which can then be used for downstream VQA and classification tasks via in-context learning with an LLM.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='TECO.png'><img src='images/TECO.png'></div>
-                <img src='images/TECO.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2210.02396">
-                <papertitle>Temporally Consistent Transfomers for Video Generation</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/TECO.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2210.02396">Temporally Consistent Transformers for Video Generation</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="https://danijar.com/">Danijar Hafner</a>,
-              <a href="https://stepjam.github.io/">Stephen James</a>
-              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-              <br>
-              <em>ICML 2023</em>
-              <br>
-              <a href="https://wilson1yan.github.io/teco/index.html">project page</a>
-              <br>
-              <a href="https://twitter.com/WilsonYan8/status/1578424234727964682?s=20&t=lDRkF1kd5XQBjqVTc9ltOg">tweet</a>
-              <br>
-              <p></p>
-              <p>A vector-quantized latent dynamics video prediction model that learns compressed representations to efficiently condition on long videos of hundreds of frames during both training and generation</p>
-            </td>
-          </tr>
-        </tbody></table>
+              <a href="https://stepjam.github.io/">Stephen James</a>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+            </p>
+            <p class="venue">ICML 2023</p>
+            <p class="paper-links">
+              <a href="teco/index.html">project page</a><a href="https://twitter.com/WilsonYan8/status/1578424234727964682">tweet</a>
+            </p>
+            <p class="summary">A vector-quantized latent dynamics video prediction model that learns compressed representations to efficiently condition on long videos of hundreds of frames during both training and generation.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='POVT.png'><img src='images/POVT.png'></div>
-                <img src='images/POVT.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2206.04003">
-                <papertitle>Patch-based Object-centric Transformers for Efficient Video Generation</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/POVT.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2206.04003">Patch-based Object-centric Transformers for Efficient Video Generation</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="https://www.linkedin.com/in/ryo-okumura-408010119/">Ryo Okumura</a>,
-              <a href="https://stepjam.github.io/">Stephen James</a>
-              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-              <br>
+              <a href="https://stepjam.github.io/">Stephen James</a>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+            </p>
+            <p class="paper-links">
               <a href="https://sites.google.com/view/povt-public">project page</a>
-              <br>
-              <p></p>
-              <p>An video generation architecture that leverages an object-centric transformer design for more scalable and efficient video generation</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="summary">A video generation architecture that leverages an object-centric transformer design for more scalable and efficient video generation.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='VideoGPT.png'><img src='images/VideoGPT.png'></div>
-                <img src='images/VideoGPT.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2104.10157">
-                <papertitle>VideoGPT: Video Generation using VQ-VAE and Transformers</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan*</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/VideoGPT.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2104.10157">VideoGPT: Video Generation using VQ-VAE and Transformers</a>
+            <p class="authors">
+              <span class="me">Wilson Yan*</span>,
               <a href="https://zzyunzhi.github.io/">Yunzhi Zhang*</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
               <a href="https://people.eecs.berkeley.edu/~aravind/">Aravind Srinivas</a>
-              <br>
-              <a href="https://wilson1yan.github.io/videogpt/index.html">project page</a>
-              <br>
-              <p></p>
-              <p>An efficient and scalable video generation architecture that first learns a VQ-VAE to compress video data, and then learns a GPT-style transformer to model discrete latent codes</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="paper-links">
+              <a href="videogpt/index.html">project page</a>
+            </p>
+            <p class="summary">An efficient and scalable video generation architecture that first learns a VQ-VAE to compress video data, and then learns a GPT-style transformer to model the discrete latent codes.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rsz_contrastive_mpc.png'><img src='images/rsz_contrastive_mpc.png'></div>
-                <img src='images/rsz_contrastive_mpc.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2003.05436">
-                <papertitle>Learning Predictive Representations for Deformable Objects Using Contrastive Estimation</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/rsz_contrastive_mpc.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/2003.05436">Learning Predictive Representations for Deformable Objects Using Contrastive Estimation</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="https://www.linkedin.com/in/ashwin-vangipuram-06606116a/">Ashwin Vangipuram</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
               <a href="https://cs.nyu.edu/~lp91/">Lerrel Pinto</a>
-              <br>
-              <em>CoRL 2020</em>
-              <br>
-              <a href="https://sites.google.com/view/contrastive-predictive-model/home">project page</a>
-              <br>
-              <a href="https://bair.berkeley.edu/blog/2020/05/05/fabrics/">blog post</a>
-              <br>
-              <p></p>
-              <p>Using contrastive methods to learn plannable representations for manipulating deformable objects such as rope and cloth</p>
-            </td>
-          </tr>
-        </tbody></table>
+            </p>
+            <p class="venue">CoRL 2020</p>
+            <p class="paper-links">
+              <a href="https://sites.google.com/view/contrastive-predictive-model/home">project page</a><a href="https://bair.berkeley.edu/blog/2020/05/05/fabrics/">blog post</a>
+            </p>
+            <p class="summary">Using contrastive methods to learn plannable representations for manipulating deformable objects such as rope and cloth.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rsz_fisher_score.png'><img src='images/rsz_fisher_score.png'></div>
-                <img src='images/rsz_fisher_score.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1912.05015">
-                <papertitle>Natural Image Manipulation for Autoregressive Models using Fisher Scores</papertitle>
-              </a>
-              <br>
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+        <li class="paper">
+          <div class="thumb"><img src="images/rsz_fisher_score.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/1912.05015">Natural Image Manipulation for Autoregressive Models using Fisher Scores</a>
+            <p class="authors">
+              <span class="me">Wilson Yan</span>,
               <a href="http://www.jonathanho.me/">Jonathan Ho</a>,
-              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-              <br>
-              <em>Preprint</em>
-              <br>
-              <p></p>
-              <p>Performing image interpolation and semantic manipulation (e.g. hair color, smiling, gender) with a PixelCN on facial images using Fisher scores as an embedding space</p>
-            </td>
-          </tr>
-        </tbody></table>
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+            </p>
+            <p class="venue">Preprint</p>
+            <p class="summary">Performing image interpolation and semantic manipulation (e.g. hair color, smiling, gender) with a PixelCNN on facial images, using Fisher scores as an embedding space.</p>
+          </div>
+        </li>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rsz_1deform_object.png'><img src='images/rsz_1deform_object.png'></div>
-                <img src='images/rsz_1deform_object.png'>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1910.13439">
-                <papertitle>Learning to Manipulate Deformable Objects without Demonstrations</papertitle>
-              </a>
-              <br>
+        <li class="paper">
+          <div class="thumb"><img src="images/rsz_1deform_object.png" alt="" loading="lazy"></div>
+          <div class="paper-body">
+            <a class="paper-title" href="https://arxiv.org/abs/1910.13439">Learning to Manipulate Deformable Objects without Demonstrations</a>
+            <p class="authors">
               <a href="http://yilinwu.net/">Yilin Wu</a>,
-              <a href="https://wilson1yan.github.io">Wilson Yan</a>,
+              <span class="me">Wilson Yan</span>,
               <a href="http://people.eecs.berkeley.edu/~thanard.kurutach/">Thanard Kurutach</a>,
               <a href="https://cs.nyu.edu/~lp91/">Lerrel Pinto</a>,
-              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-              <br>
-              <em>RSS 2020</em>
-              <br>
-              <a href="https://sites.google.com/view/alternating-pick-and-place/home">project page</a>
-              <br>
-              <a href="https://bair.berkeley.edu/blog/2020/05/05/fabrics/">blog post</a>
-              <br>
-              <p></p>
-              <p>Sim-to-Real transfer to learning a cloth-spreading policy on a real robot with any human demonstrations</p>
-            </td>
-          </tr>
-        </tbody></table>
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+            </p>
+            <p class="venue">RSS 2020</p>
+            <p class="paper-links">
+              <a href="https://sites.google.com/view/alternating-pick-and-place/home">project page</a><a href="https://bair.berkeley.edu/blog/2020/05/05/fabrics/">blog post</a>
+            </p>
+            <p class="summary">Sim-to-real transfer for learning a cloth-spreading policy on a real robot without any human demonstrations.</p>
+          </div>
+        </li>
 
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody> -->
-        <!--   <tr> -->
-        <!--     <td> -->
-        <!--       <heading>Teaching</heading> -->
-        <!--     </td> -->
-        <!--   </tr> -->
-        <!-- </tbody></table> -->
-        <!-- <table width="100%" align="center" border="0" cellpadding="20"><tbody> -->
-        <!--   <tr> -->
-        <!--     <td style="padding:20px;width:25%;vertical-align:middle"> -->
-        <!--       <img src="images/cs188.jpg" alt="cs188"> -->
-        <!--     </td> -->
-        <!--     <td width="75%" valign="center"> -->
-        <!--       <b> CS 188: Introduction to Artificial Intelligence </b><br> -->
-        <!--       <a href="http://inst.eecs.berkeley.edu/~cs188/fa18">Undergraduate Student Instructor, CS188 Fall 2018</a> -->
-        <!--       <br> -->
-        <!--       <a href="http://inst.eecs.berkeley.edu/~cs188/sp19">Undergraduate Student Instructor, CS188 Spring 2019</a> -->
-        <!--       <br> -->
-        <!--       <a href="http://inst.eecs.berkeley.edu/~cs188/fa19">Head Undergraduate Student Instructor, CS188 Fall 2019</a> -->
-        <!--       <br> -->
-        <!--       <br> -->
-        <!--       <b> CS 294-158: Deep Unsupervised Learning </b><br> -->
-        <!--       <a href="https://sites.google.com/view/berkeley-cs294-158-sp20/home">Undergraduate Student Instructor, CS294-158 Spring 2020</a> -->
-        <!--     </td> -->
-        <!--   </tr> -->
-        <!-- </tbody></table> -->
+      </ul>
+    </section>
 
-        <a href="https://jonbarron.info/">Website Source</a>
+    <footer>
+      Template adapted from <a href="https://jonbarron.info/">Jon Barron</a>
+    </footer>
+
+  </main>
 </body>
-
 </html>
